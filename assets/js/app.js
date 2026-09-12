@@ -20,7 +20,7 @@ xhr.onload = function (){
         let data = JSON.parse(xhr.response)
         let res = '';
         data.forEach(ele => {
-            res += `<div class="col-4 mt-5" id=${ele.id}>
+            res += `<div class="col-3 mt-5" id=${ele.id}>
                 <div class="card h-100">
                     <div class="card-header">
                         <h3 class="m-0">${ele.title}</h3>
