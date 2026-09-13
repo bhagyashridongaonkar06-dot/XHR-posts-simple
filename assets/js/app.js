@@ -59,6 +59,7 @@ function onSubmit(eve){
     xhr.open("POST", post_url);
     xhr.send(JSON.stringify(newObj));
     xhr.onload = () => {
+        postForm.reset()
         if(xhr.status === 201 && xhr.readyState == 4){
             
             let newPost = document.createElement("div");
